@@ -46,3 +46,19 @@
     display: block;
     margin :20px
 }
+.new
+{
+    margin-top: 50px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.new h3{
+    font-weight: 500;
+    color: rgb(64, 64, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+}

@@ -32,8 +32,9 @@ export const Contact = () => {
   };
   return (
  <>
- <hr/>
+ {/* <hr/> */}
 <div className=' new div-right'>
+  <hr/>
  <h3>Contact Us</h3>        </div>
 
  <div className="contact">

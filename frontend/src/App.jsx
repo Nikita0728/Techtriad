@@ -9,17 +9,22 @@ import { About } from './Components/About/About';
 import Navbar from './Components/Navbar/Navbar'
 import Login from './Pages/Login'
 import Map from './Pages/Map';
+import { Contact } from './Components/Contact/Contact';
 
 function App() {
 
 
   return (
-    <div >
+   <>
   
    <Navbar/>
 {/* <Login/> */}
-<Map/>
-    </div>
+
+{/* <Map/> */}
+<About/>
+<Contact/>
+<Footer/>
+    </>
   )
 }
 
