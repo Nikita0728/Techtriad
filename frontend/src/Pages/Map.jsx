@@ -83,8 +83,6 @@ const handleClick = async(event) => {
 
   
   const onLoad = React.useCallback(function callback(map) {
-
-
     const bounds = new window.google.maps.LatLngBounds();
     const lalitpurArea = new window.google.maps.LatLng(27.6644, 85.3182);
     bounds.extend(lalitpurArea);
