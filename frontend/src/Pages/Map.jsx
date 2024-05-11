@@ -6,12 +6,12 @@ import axios, { all } from 'axios'
 
 
 function MyComponent() {
-const[officer,setofficer]=useState(true)   
+// const[officer,setofficer]=useState(true)   
   const [allvalues,setAllvalues]=useState([])
   const [markers, setMarkers] = useState([]);
   console.log(useContext(Context))
   console.log(Context)
-  // const { markers,setMarkers, officer ,setofficer }= useContext(Context);
+  const {  officer ,setofficer }= useContext(Context);
 const containerStyle = {
   justifyContent: 'center',
   items:'center',
