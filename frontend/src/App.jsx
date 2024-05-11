@@ -8,15 +8,17 @@ import { About } from './Components/About/About';
 
 import Navbar from './Components/Navbar/Navbar'
 import Login from './Pages/Login'
+import{ Contact} from './Components/Contact/Contact'
 
 function App() {
 
 
   return (
-    <div>
+    <div >
   
-   <Navbar/>
-<Login/>
+      <Navbar/>
+      <About/>
+      <Contact/>
     </div>
   )
 }
