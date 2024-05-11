@@ -8,6 +8,7 @@ import { About } from './Components/About/About';
 
 import Navbar from './Components/Navbar/Navbar'
 import Login from './Pages/Login'
+import Map from './Pages/Map';
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
     <div>
   
    <Navbar/>
-<Login/>
+{/* <Login/> */}
+<Map/>
     </div>
   )
 }
