@@ -1,14 +1,17 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { GoogleMap,  MarkerF, useJsApiLoader } from '@react-google-maps/api';
-// import Context from './ContextAPI/Contextprovider'
+import Context from '../ContextAPI/Contextprovider'
 import axios, { all } from 'axios'
 
 
 
 function MyComponent() {
-const[officer,setofficer]=useState(false)   
+const[officer,setofficer]=useState(true)   
   const [allvalues,setAllvalues]=useState([])
-//   const {markers,setMarkers,officer ,setofficer}=useContext(Context);
+  const [markers, setMarkers] = useState([]);
+  console.log(useContext(Context))
+  console.log(Context)
+  // const { markers,setMarkers, officer ,setofficer }= useContext(Context);
 const containerStyle = {
   justifyContent: 'center',
   items:'center',
@@ -16,32 +19,37 @@ const containerStyle = {
   height: '100vh'
 };
 
-const center = {
+const center = [{
   lat: 27.6644,
   lng: 85.3182
-};
-// useEffect(()=>{
-//  const getData=async()=>{
-//     try{
+},{
+  lat: 27.6604,
+  lng: 84.3082
+}]
+
+useEffect(()=>{
+  console.log("im useeffect")
+ const getData=async()=>{
+    try{
 
 
-//       const alldata= await axios.post('http://localhost:3000/getdata')
-//       console.log("im alldata",alldata.data)
-//       setAllvalues(alldata.data)
+      const alldata= await axios.post('http://localhost:3000/getdata')
+      console.log("im all data",alldata.data)
+      setAllvalues(alldata.data)
      
-//     }
+    }
     
-//     catch(e)
-//     {
-//       console.log("cannot fetch data from db" ,e)
-//     } 
+    catch(e)
+    {
+      console.log("cannot fetch data from db" ,e)
+    } 
     
-//   }
+  }
 
-//     getData() 
+getData() 
     
    
-// },[])
+},[])
 
 const handleClick = async(event) => {
   if(!officer)
@@ -93,7 +101,7 @@ const handleClick = async(event) => {
   const onUnmount = React.useCallback(function callback(map) {
     setMap(null)
   }, [])
-
+console.log( "baby",allvalues)
   return isLoaded ? (
       <GoogleMap 
         mapContainerStyle={containerStyle}
@@ -107,7 +115,7 @@ const handleClick = async(event) => {
         }}
         onClick={handleClick}
       >
-{/* { officer ? (
+{ officer ? (
        <>
        <div className='text-black'>Rendering officer portion</div>
        <div>
@@ -119,12 +127,13 @@ const handleClick = async(event) => {
         ):
         (
         
-           allvalues.map((x,i)=>(
-            <MarkerF position={x}></MarkerF>
+           markers.map((x,i)=>(
+            <MarkerF position={{lat:x.lat, lng:x.lng}}></MarkerF>
          ))
         )
-       } */}
-      <MarkerF position={center}></MarkerF>
+       }
+       
+     
 
        
         <></>

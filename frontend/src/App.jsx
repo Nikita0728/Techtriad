@@ -21,7 +21,7 @@ function App() {
    <About/>
    <Contact/>
 {/* <Login/> */}
-{/* <Map/> */}
+<Map/>
     </>
   )
 }
