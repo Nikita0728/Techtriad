@@ -1,6 +1,6 @@
 import './About.css'
 import Button from 'react-bootstrap/Button';
-
+import dark_arrow from '../../assets/dark-arrow.png'
 
 export const About= () => {
   return (
@@ -10,12 +10,10 @@ export const About= () => {
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab neque dolorum sapiente voluptatum, veritatis obcaecati nihil. Nesciunt illo fugit id, laborum quia itaque error quaerat, perspiciatis voluptate ratione optio doloribus asperiores tempore fuga qui.
                  </p>
                  <div className='up-btn'>
-                 <Button className='btn-exp'>Login</Button>
+                 <Button className='btn-exp'>Get Started<img src={dark_arrow}></img></Button>
                  </div>
-                 <p className='second-paragraph' > Don't have an account?</p>
-                 <div className='up-btn'>
-                 <Button className='btn-exp btn-2'>Signup</Button>
-                 </div>
+                
+                
                  </div>
                  <hr/>
 

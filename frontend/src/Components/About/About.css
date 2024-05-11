@@ -27,13 +27,22 @@
 }
 .btn-exp
 {
-    width: 100px;
+    width: 250px;
     font-size: 25px;
     display: flex;
     justify-content: center;
-    background-color: rgb(246, 246, 222);
+    background-color:rgb(105, 210, 105);
+
     color:black;
     border: none;
+}
+.btn-exp img{
+    display: flex  ;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 5px;
+    width:45px;
 }
 .up-btn
 {
@@ -45,7 +54,7 @@
     justify-content: center;
      align-items: center;
 }
-.btn-2:hover{
+.btn-exp:hover{
     background-color:rgb(86, 246, 86);
     color: black;
 }
