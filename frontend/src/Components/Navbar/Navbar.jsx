@@ -7,7 +7,7 @@ const Navbars = () => {
   return (
     <>
     <div className='navbar'>
-    <Navbar bg="dark" data-bs-theme="dark">
+    <Navbar bg="dark" data-bs-theme="dark" fixed='top'>
         <Container>
           <Navbar.Brand href="#home">Niwaran</Navbar.Brand>
           <Nav className="me-auto">
