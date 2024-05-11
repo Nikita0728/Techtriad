@@ -6,17 +6,18 @@ import { Footer } from './Components/Footer/Footer';
 import { About } from './Components/About/About';
 
 
+import Navbar from './Components/Navbar/Navbar'
+import Login from './Pages/Login'
 
 function App() {
 
 
   return (
-    <>
-   
-   <Navbars/>
-   <About/>
-   <Footer/>
-    </>
+    <div>
+  
+   <Navbar/>
+<Login/>
+    </div>
   )
 }
 
