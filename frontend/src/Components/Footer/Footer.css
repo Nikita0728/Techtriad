@@ -1,0 +1,9 @@
+.footer{
+    margin:10px auto;
+    display :flex;
+    width:90%;
+    justify-content: space-between;
+
+    justify-content: space-between; 
+    border-top: 1px solid #797979
+}
