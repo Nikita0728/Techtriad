@@ -1,15 +1,17 @@
 
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
+import Login from './Pages/Login'
 
 function App() {
 
 
   return (
-    <>
-   hello i am suhsmaaaaaaaaaaaaaaaaaa
+    <div>
+  
    <Navbar/>
-    </>
+<Login/>
+    </div>
   )
 }
 
