@@ -10,7 +10,8 @@ export const About= () => {
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab neque dolorum sapiente voluptatum, veritatis obcaecati nihil. Nesciunt illo fugit id, laborum quia itaque error quaerat, perspiciatis voluptate ratione optio doloribus asperiores tempore fuga qui.
                  </p>
                  <div className='up-btn'>
-                 <Button className='btn-exp'>Get Started<img src={dark_arrow}></img></Button>
+                 <Button className='btn-exp one'>Get Started as a administrator<img src={dark_arrow}></img></Button>
+                 <Button className='btn-exp'>Get Started as a local<img src={dark_arrow}></img></Button>
                  </div>
                 
                 

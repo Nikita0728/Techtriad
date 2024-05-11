@@ -28,13 +28,15 @@
 .btn-exp
 {
     width: 250px;
-    font-size: 25px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color:rgb(105, 210, 105);
 
     color:black;
     border: none;
+    margin-right: 10px;
 }
 .btn-exp img{
     display: flex  ;
@@ -57,5 +59,8 @@
 .btn-exp:hover{
     background-color:rgb(86, 246, 86);
     color: black;
+}
+.one{
+    background-color: white;
 }
 
