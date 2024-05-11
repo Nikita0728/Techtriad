@@ -2,6 +2,7 @@ import express from 'express'
 import connectDB from './database/db.js'
 import  loginentry from './database/Controller/Login.js'
 import add from './database/Controller/Addcomplain.js'
+import adddataModel from './database/Schema/Mapschema.js'
 import cors from 'cors'
 const app = express()
 const port = 3000
@@ -23,3 +24,13 @@ app.post('/add', (req,res)=>{
   add(req.body)
   res.set('ADDED')
 })
+
+app.post('/getdata', async(req,res)=>{
+  
+  const data =  await adddataModel.find()
+  console.log("im data",data)
+  return res.json(data)
+
+}
+
+)
