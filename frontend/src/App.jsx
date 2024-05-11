@@ -1,6 +1,9 @@
 
 import './App.css'
-import Navbar from './Components/Navbar/Navbar'
+import Navbars from './Components/Navbar/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
 
@@ -8,7 +11,7 @@ function App() {
   return (
     <>
    hello i am suhsmaaaaaaaaaaaaaaaaaa
-   <Navbar/>
+   <Navbars/>
     </>
   )
 }
