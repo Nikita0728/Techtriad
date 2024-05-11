@@ -8,7 +8,7 @@ import { About } from './Components/About/About';
 
 import Navbar from './Components/Navbar/Navbar'
 import Login from './Pages/Login'
-import{ Contact} from './Components/Contact/Contact'
+import Map from './Pages/Map';
 
 function App() {
 
@@ -16,9 +16,9 @@ function App() {
   return (
     <div >
   
-      <Navbar/>
-      <About/>
-      <Contact/>
+   <Navbar/>
+{/* <Login/> */}
+<Map/>
     </div>
   )
 }
