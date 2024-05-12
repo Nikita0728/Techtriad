@@ -2,7 +2,7 @@
 import mongoose from "mongoose"
 
 const loginschema= new mongoose.Schema( {
-    Name:{
+    Email:{
         type:String,
         required:true
     },

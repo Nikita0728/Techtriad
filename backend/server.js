@@ -18,10 +18,10 @@ connectDB()
 app.post('/loginentry', async(req, res) => {
   // loginentry(req.body)
   // res.send('ADDED')
- const {Name, Password} = req.body
+ const {Email, Password} = req.body
 
   try{
-    const user = await Signinmodel.findOne({Name})
+    const user = await Signinmodel.findOne({Email:Email})
     console.log("im user",user)
     if(!user)
     {

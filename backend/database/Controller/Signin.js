@@ -3,7 +3,7 @@ import Signinmodel from "../Schema/SigninModel.js";
  export const signinentry= async(reqdata)=>{
    console.log( "from signin controller",reqdata)
     const sign = new Signinmodel({
-        Name:reqdata.Name,
+        Email:reqdata.Email,
         Password:reqdata.Password
     })
     try{
