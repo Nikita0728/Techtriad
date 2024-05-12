@@ -4,6 +4,9 @@ import { Button } from "@/Components/ui/button";
 import React from 'react'
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
+import Signup from "./Signup";
+
 
 const Login = () => {
   const navigate=useNavigate()
@@ -38,12 +41,17 @@ try{
 }
 
   return (
-    <div className="h-screen w-screen flex  justify-center items-center  ">
-      <div className=" flex flex-col w-fit  gap-8 h-fit  bg-red-500 p-5">
-        <input type="text" value={name} onChange={(e)=>setname(e.target.value)} placeholder="Enter your email" />
-        <input type="password" value={psw}  onChange={(e)=>setpsw(e.target.value)} placeholder="Enter your password" />
-    <Button variant="outline" onClick={()=>{adddata()}} >Submit</Button>
-    </div>
+    <div className="h-screen w-screen flex  justify-center items-center  bg-[#f2f4f7] ">
+ <div className="flex flex-col w-fit gap-8 h-fit bg-[#ffffff] p-5" style={{ boxShadow: '0px 0px 6px rgba(0, 0, 0, 0.2)', borderRadius: '8px' }}>
+   <div>Welcome back to Niwaran</div>
+    <input type="text" value={name} onChange={(e) => setname(e.target.value)} placeholder="Enter your email" style={{ border: '1px solid black', borderRadius: '4px', padding: '8px', background: 'transparent', color: 'black' }} />
+   
+    <input type="password" value={psw} onChange={(e) => setpsw(e.target.value)} placeholder="Enter your password" style={{ border: '1px solid  black', borderRadius: '4px', padding: '8px', background: 'transparent', color: 'black' }} />
+    <div className="flex flex-row gap-2 items-center"><FcGoogle /><p>Login with google</p></div>
+    <Button variant="outline" onClick={() => { adddata() }} className="bg-red-600 text-white" >Submit</Button>
+    <Signup/>
+</div>
+
     </div>
   )
 

@@ -14,6 +14,8 @@ import  {About}  from './Components/About/About';
 import { Contact } from './Components/Contact/Contact';
 import { ContextProvider } from './ContextAPI/Contextprovider';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Signup from './Pages/Signup';
+
 
 function App() {
 
@@ -23,6 +25,7 @@ function App() {
   <ContextProvider>
     <BrowserRouter>
     <Navbars/>
+    
     <Routes>
       <Route path='/' element={<About/>}/>
       {/* <About/> */}
@@ -30,7 +33,9 @@ function App() {
       <Route path ='/contact' element={<Contact/>}/>
 
     <Route path ='/map' element={<Map/>}/>
+    <Route path='/signup' element={<Signup/>}/>
     </Routes>
+   
     </BrowserRouter>
   
   
@@ -39,6 +44,7 @@ function App() {
    
 {/* <Login/> */}
 {/* <Map/> */}
+
 </ContextProvider>
     </>
   )
