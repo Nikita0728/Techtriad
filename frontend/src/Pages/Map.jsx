@@ -52,7 +52,7 @@ getData()
 },[])
 
 const handleClick = async(event) => {
-  if(!officer)
+  if(officer)
     {
   const lat = event.latLng.lat();
   const lng = event.latLng.lng();

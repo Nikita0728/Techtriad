@@ -26,7 +26,7 @@ function App() {
       <Route path='/' element={<About/>}/>
       {/* <About/> */}
       <Route path='/login' element={<Login/>}/>
-    
+    <Route path ='/map' element={<Map/>}/>
     </Routes>
     </BrowserRouter>
   
@@ -35,7 +35,7 @@ function App() {
    {/* <Map/> */}
    
 {/* <Login/> */}
-<Map/>
+{/* <Map/> */}
 </ContextProvider>
     </>
   )
