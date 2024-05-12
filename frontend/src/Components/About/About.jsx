@@ -5,6 +5,7 @@ import { useContext } from 'react';
 import Context from '@/ContextAPI/Contextprovider';
 import { useNavigate } from 'react-router-dom';
 import { Contact } from '../Contact/Contact';
+import { About2 } from '../About2/About2';
 
 
 
@@ -25,6 +26,7 @@ console.log("officer",officer)
 console.log("officer",officer)
   }
   return (
+    <>
     <div >
     <div className='body1 h-screen   'id='home'>
         <div className='para'>
@@ -42,8 +44,11 @@ console.log("officer",officer)
 
                    
     </div>
-    <Contact/> 
 
     </div>
+    <About2/>
+    <Contact/>
+
+    </>
   )
 }
