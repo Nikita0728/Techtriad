@@ -4,7 +4,7 @@ import adddataModel from "../Schema/Mapschema.js"
 
  const add = async(reqdata)=>{
     // const {complain}=reqdata
-    console.log("im resdata", reqdata)
+    // console.log("im resdata", reqdata)
     
     const adddata =  new adddataModel({
         Complain : reqdata.complain,
