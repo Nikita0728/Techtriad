@@ -5,6 +5,7 @@ import { useContext } from 'react';
 import Context from '@/ContextAPI/Contextprovider';
 import { useNavigate } from 'react-router-dom';
 import { Contact } from '../Contact/Contact';
+import { About2 } from '../About2/About2';
 
 
 
@@ -21,6 +22,7 @@ setOfficer(true)
 setOfficer(false)
   }
   return (
+    <>
     <div >
     <div className='body1 h-screen   'id='home'>
         <div className='para'>
@@ -38,7 +40,6 @@ setOfficer(false)
 
                    
     </div>
-    <Contact/> 
 
     </div>
     <About2/>
