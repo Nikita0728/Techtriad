@@ -12,19 +12,32 @@ import Login from './Pages/Login'
 import Map from './Pages/Map';
 import  {About}  from './Components/About/About';
 import { Contact } from './Components/Contact/Contact';
+import { ContextProvider } from './ContextAPI/Contextprovider';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+
 function App() {
 
 
   return (
    <>
+  <ContextProvider>
+    <BrowserRouter>
+    <Navbars/>
+    <Routes>
+      <Route path='/' element={<About/>}/>
+      {/* <About/> */}
+      <Route path='/login' element={<Login/>}/>
+    <Route path ='/map' element={<Map/>}/>
+    </Routes>
+    </BrowserRouter>
   
-   <Navbars/>
-   <About/>
+
    <Contact/>
    {/* <Map/> */}
    
 {/* <Login/> */}
-<Map/>
+{/* <Map/> */}
+</ContextProvider>
     </>
   )
 }

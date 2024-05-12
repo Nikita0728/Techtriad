@@ -5,9 +5,9 @@ import React, { createContext, useState } from 'react';
  
   export const ContextProvider=({children})=>{
 
-    const [officer, setOfficer] = useState(false);
+    const [ officer, setOfficer ] = useState(false);
    return(
-    <Context.Provider value={{officer,setOfficer}}>  
+    <Context.Provider value={{ officer, setOfficer}}>  
    
     {children}
 

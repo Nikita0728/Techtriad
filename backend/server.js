@@ -15,6 +15,7 @@ app.listen(port, () => {
 connectDB()
 app.get('/loginentry', (req, res) => {
   loginentry(req.body)
+  res.send(200)
 })
 
 app.post('/add', (req,res)=>{
