@@ -27,13 +27,13 @@ function App() {
       <Route path='/' element={<About/>}/>
       {/* <About/> */}
       <Route path='/login' element={<Login/>}/>
+      <Route path ='/contact' element={<Contact/>}/>
+
     <Route path ='/map' element={<Map/>}/>
     </Routes>
     </BrowserRouter>
   
-  <About2/>
   
-   <Contact/>
    <Footer/>
    {/* <Map/> */}
    

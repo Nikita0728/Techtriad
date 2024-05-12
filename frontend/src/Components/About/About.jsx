@@ -3,7 +3,8 @@ import Button from 'react-bootstrap/Button';
 import dark_arrow from '../../assets/dark-arrow.png'
 import { useContext } from 'react';
 import Context from '@/ContextAPI/Contextprovider';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';import { About2 } from '../About2/About2';
+import { Contact } from '../Contact/Contact';
 
 export const About= () => {
   const navigate=useNavigate()
@@ -18,6 +19,7 @@ setOfficer(true)
 setOfficer(false)
   }
   return (
+    <>
     <div className='body1  'id='home'>
         <div className='para'>
                  <h1> One community, many solutions</h1>
@@ -32,7 +34,12 @@ setOfficer(false)
                  </div>
                  <hr/>
 
+
                  
     </div>
+    <About2/>
+    <Contact/>
+
+    </>
   )
 }
