@@ -4,6 +4,9 @@ import dark_arrow from '../../assets/dark-arrow.png'
 import { useContext } from 'react';
 import Context from '@/ContextAPI/Contextprovider';
 import { useNavigate } from 'react-router-dom';
+import { Contact } from '../Contact/Contact';
+
+
 
 export const About= () => {
   const navigate=useNavigate()
@@ -18,7 +21,8 @@ setOfficer(true)
 setOfficer(false)
   }
   return (
-    <div className='body1  'id='home'>
+    <div >
+    <div className='body1 h-screen   'id='home'>
         <div className='para'>
                  <h1> One community, many solutions</h1>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab neque dolorum sapiente voluptatum, veritatis obcaecati nihil. Nesciunt illo fugit id, laborum quia itaque error quaerat, perspiciatis voluptate ratione optio doloribus asperiores tempore fuga qui.
@@ -32,7 +36,10 @@ setOfficer(false)
                  </div>
                  <hr/>
 
-                 
+                   
+    </div>
+    <Contact/> 
+
     </div>
   )
 }
