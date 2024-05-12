@@ -1,0 +1,35 @@
+.div-right h3{
+    color: rgb(64, 64, 208);
+    font-size: 20px;
+}
+.div-right h2{
+    font-weight: 600px;
+    font-size: 35px;
+}
+.div-right p{
+    font-size: 16px;
+}
+.about
+    
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:90%;
+        margin-top: 60px;
+    }
+    .about-img{
+        width:100%;
+        border-radius: 10px;
+
+        
+    }
+    .div-left {
+        flex-basis: 40%;
+        position :relative;
+
+       
+    }
+    .div-right{
+        flex-basis:56%;
+    }

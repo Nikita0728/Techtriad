@@ -25,7 +25,7 @@ setOfficer(false)
     <div className='body1 h-screen   'id='home'>
         <div className='para'>
                  <h1> One community, many solutions</h1>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab neque dolorum sapiente voluptatum, veritatis obcaecati nihil. Nesciunt illo fugit id, laborum quia itaque error quaerat, perspiciatis voluptate ratione optio doloribus asperiores tempore fuga qui.
+                 <p>Turning complaints into resolution one tap at a time.
                  </p>
                  <div className='up-btn'>
                  <Button className='btn-exp one' onClick={Adminitrator}>Get Started as a administrator<img src={dark_arrow}></img></Button>

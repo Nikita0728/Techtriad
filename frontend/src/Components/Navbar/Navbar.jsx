@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import './Navbar.css'
 import { NavLink } from 'react-router-dom';
+import logo from '../../assets/Niwaran.png'
 
 const Navbars = () => {
   return (
