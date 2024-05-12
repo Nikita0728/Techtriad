@@ -12,13 +12,17 @@ export const About= () => {
   const navigate=useNavigate()
   const {officer,setOfficer}=useContext(Context)
   const Adminitrator=()=>{
+    setOfficer(true)
     console.log("clicked")
     navigate('/login')
-setOfficer(true)
+
+console.log("officer",officer)
   }
   const localpep=()=>{
+    setOfficer(false)
     navigate('/login')
-setOfficer(false)
+
+console.log("officer",officer)
   }
   return (
     <div >
