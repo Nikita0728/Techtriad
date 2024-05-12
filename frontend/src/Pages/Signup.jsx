@@ -25,20 +25,19 @@ const navigate=useNavigate()
       else{
       try{
 
-let postData =await axios.get('http://localhost:3000/signup',
-  {  Name: 'hello', 
-    Email: 'email', 
-    Password: 'assword' }
-)
-.then(()=>{
-  console.log("added to db")
-  navigate('/map')
-})
-.catch((error)=>{
-  console.log("cannot add data to db",error)
-})
+let postData =await axios.post('http://localhost:3000/signup',
+  {  Name: name, 
+    Email: email, 
+    Password: password
+   }
+);if(postData)
+  {
+    console.log("I am respinse" )
+    navigate('/map')
+  }
+
     }
-    
+   
     catch(error){
       console.log("cannot add data to db",error)
     
@@ -49,8 +48,9 @@ let postData =await axios.get('http://localhost:3000/signup',
 
   
   return (
-    <div className='flex justify-center items-center '>
-    <div className=' flex flex-col gap-4  w-fit'>
+    <div className='h-screen w-screen flex  justify-center items-center  bg-[#f2f4f7] '>
+    <div className=' flex flex-col gap-4  h-fit w-[24rem]   p-5  'style={{ boxShadow: '0px 0px 6px rgba(0, 0, 0, 0.2)', borderRadius: '8px' }}>
+    <div>Welcome to Niwaran</div>
     <input type="text" placeholder="Enter your email"  onChange={(e)=>setEmail(e.target.value)} style={{ border: '1px solid black', borderRadius: '4px', padding: '8px', background: 'transparent', color: 'black' }} />
    <input type="text" placeholder="Enter your name" onChange={(e)=>setName(e.target.value)} style={{ border: '1px solid black', borderRadius: '4px', padding: '8px', background: 'transparent', color: 'black' }} />
     <input type="password" placeholder="Enter your password" onChange={(e)=>setPassword(e.target.value)} style={{ border: '1px solid  black', borderRadius: '4px', padding: '8px', background: 'transparent', color: 'black' }} />

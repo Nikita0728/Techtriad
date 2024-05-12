@@ -15,7 +15,7 @@ function MyComponent() {
 const containerStyle = {
   justifyContent: 'center',
   items:'center',
-  width: '100vh',
+  width: '100%',
   height: '100vh'
 };
 
@@ -28,7 +28,6 @@ const center = [{
 }]
 
 useEffect(()=>{
-  console.log("im useeffect")
  const getData=async()=>{
     try{
 
@@ -52,8 +51,11 @@ getData()
 },[])
 
 const handleClick = async(event) => {
-  if(officer)
+  console.log("clicked")
+  if(!officer)
     {
+      
+      console.log("here")
   const lat = event.latLng.lat();
   const lng = event.latLng.lng();
   const comment = window.prompt('Enter your comment:');

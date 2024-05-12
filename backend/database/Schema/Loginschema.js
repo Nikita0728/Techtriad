@@ -2,7 +2,10 @@
 import mongoose from "mongoose"
 
 const loginschema= new mongoose.Schema( {
-    Name:String,
+    Name:{
+        type:String,
+        required:true
+    },
    Password:String,
    
 }
