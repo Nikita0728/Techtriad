@@ -31,8 +31,10 @@ function App() {
     </Routes>
     </BrowserRouter>
   
-
+  <About2/>
+  
    <Contact/>
+   <Footer/>
    {/* <Map/> */}
    
 {/* <Login/> */}
