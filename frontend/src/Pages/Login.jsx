@@ -11,27 +11,27 @@ const Login = () => {
   const navigate=useNavigate()
   const[name ,setName]=useState()
   const [psw, setPsw] = useState()
+
+
   const  adddata=async()=>{
     console.log("I am in adddata clicked")
     
 try{
-     await axios.get('http://localhost:3000/loginentry', {
+     const found= await axios.post('http://localhost:3000/loginentry', {
       Name: name,
       Password: psw
-    }).then(
-      (res) => {
-        console.log("added to db",res)
-        if(res.status==200)
-          {
-           console.log("I am respinse" )
-           navigate('/map')
+    })
+    if(found.status==200)
+      {
+       console.log("I am respinse" )
+      navigate('/map')
 
-          }
-    }
-   
+      }
+      else {
+        alert("User not found")
+      }
+    
 
-    )
- 
   }
   
   catch(error)
