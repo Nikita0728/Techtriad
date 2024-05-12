@@ -23,20 +23,23 @@
     font-size: 20px;
     margin: 20px auto 40px;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
     
 }
 .btn-exp
 {
     width: 250px;
-    font-size: 15px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(105, 210, 105);
+    background-color:white;
 
     color:black;
     border: none;
     margin-right: 10px;
+    animation: fadeIn 1s ease;
 }
 .btn-exp img{
     display: flex  ;
@@ -57,10 +60,11 @@
      align-items: center;
 }
 .btn-exp:hover{
-    background-color:rgb(86, 246, 86);
+    background-color: #7AB2B2;
     color: black;
+    transform: scale(1.1);
 }
 .one{
-    background-color: white;
-}
+   opacity: 0.6;
+};
 
